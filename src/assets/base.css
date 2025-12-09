@@ -23,32 +23,21 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  --color-background: #ffffff;
+  --color-background-soft: #fbfdff;
+  --color-background-mute: #f6f9fb;
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border: rgba(11,59,87,0.06);
+  --color-border-hover: rgba(11,59,87,0.09);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: #0b3b57;
+  --color-text: rgba(11,59,87,0.9);
 
   --section-gap: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
-
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
-
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
-}
+/* Force white background for demo — not using dark-theme here */
+html, body { background: var(--color-background); color: var(--color-text) }
 
 *,
 *::before,
@@ -84,3 +73,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Headings and typography */
+h1 { font-family: 'Merriweather', serif; font-size: 2rem; color: var(--color-heading); margin-bottom: 0.6rem; }
+h2 { font-family: 'Merriweather', serif; font-size: 1.25rem; color: var(--color-heading); margin-top: 1.25rem; }
+p { color: rgba(11,59,87,0.8); }
+
+/* Utility container often used in views */
+.container { max-width: 1200px; margin: 0 auto; }
