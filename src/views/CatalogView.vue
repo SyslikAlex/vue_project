@@ -25,6 +25,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem }
-</style>

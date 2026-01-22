@@ -51,10 +51,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.cart { width:100%; border-collapse:collapse; margin-top:1rem }
-.cart th, .cart td { padding:0.5rem; border-bottom:1px solid #eef6fb }
-.total { margin-top:1rem; font-size:1.1rem }
-.actions { display:flex; gap:0.5rem; margin-top:0.75rem }
-.btn.primary { background:#0b83c2; color:#fff; border:0; padding:0.5rem 0.8rem; border-radius:6px }
-</style>

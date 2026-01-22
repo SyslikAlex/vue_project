@@ -34,11 +34,3 @@ export default {
   </section>
 </template>
 
-<style scoped>
-.grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:1rem; margin-top:1rem }
-h1 { margin:0 0 0.5rem 0 }
-
-.hero { padding:2.5rem 0; background: linear-gradient(180deg,#ffffff,#fbfdff) }
-.hero .lead { max-width:720px; color: rgba(11,59,87,0.8); margin-top:0.5rem }
-.catalog { padding-top:1.5rem }
-</style>

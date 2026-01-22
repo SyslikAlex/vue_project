@@ -44,12 +44,3 @@ export default {
 }
 </script>
 
-<style scoped>
-.price { font-weight:700; margin:0.25rem 0; color:#0b4a6f }
-.product .layout { display:flex; gap:1.25rem; align-items:flex-start }
-.product .photo { width:360px; height:260px; background:#fff; display:flex; align-items:center; justify-content:center; border-radius:10px; box-shadow:0 8px 20px rgba(11,59,87,0.06) }
-.product .photo img { max-width:100%; max-height:100%; object-fit:contain }
-.controls { margin-top:1rem; display:flex; gap:0.5rem; align-items:center }
-.btn.primary { background:#0b83c2; color:#fff; border:0; padding:0.6rem 0.9rem; border-radius:8px }
-input[type=number] { width:90px; padding:0.4rem }
-</style>

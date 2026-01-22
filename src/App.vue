@@ -15,6 +15,54 @@ export default {
     <main>
       <router-view />
     </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-section">
+              <h4>Kategórie</h4>
+              <ul>
+                <li><router-link to="/katalog">Všetky nástroje</router-link></li>
+                <li><router-link to="/katalog">Gitary</router-link></li>
+                <li><router-link to="/katalog">Klávesy</router-link></li>
+                <li><router-link to="/katalog">Bubny</router-link></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Pomoc</h4>
+              <ul>
+                <li><router-link to="/about">O nás</router-link></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Doručovanie</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Právne</h4>
+              <ul>
+                <li><a href="#">Podmienky</a></li>
+                <li><a href="#">Ochrana údajov</a></li>
+                <li><a href="#">Cookies</a></li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <h4>Sledujte nás</h4>
+              <ul class="social-links">
+                <li><a href="#" title="Facebook">f</a></li>
+                <li><a href="#" title="Instagram">📷</a></li>
+                <li><a href="#" title="Twitter">𝕏</a></li>
+                <li><a href="#" title="YouTube">▶</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>© 2026 Hudobné Nástroje — všetky práva vyhradené</p>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 
