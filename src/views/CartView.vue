@@ -32,20 +32,20 @@
 </template>
 
 <script>
-import { useCartStore } from '../stores/cart'
+import { useProductsStore } from '../stores/products'
 
 export default {
   name: 'CartView',
   computed: {
-    cart() { return useCartStore() },
-    items() { return this.cart.items },
-    detailed() { return this.cart.detailedItems },
-    totalPrice() { return this.cart.totalPrice },
+    store() { return useProductsStore() },
+    items() { return this.store.cartItems },
+    detailed() { return this.store.detailedItems },
+    totalPrice() { return this.store.totalPrice },
   },
   methods: {
-    update(id, qty) { const cart = useCartStore(); cart.setQty(id, qty) },
-    remove(id) { const cart = useCartStore(); cart.removeFromCart(id) },
-    clear() { const cart = useCartStore(); cart.clearCart() },
+    update(id, qty) { const store = useProductsStore(); store.setQty(id, qty) },
+    remove(id) { const store = useProductsStore(); store.removeFromCart(id) },
+    clear() { const store = useProductsStore(); store.clearCart() },
     checkout() { alert('Ďakujeme! Toto je demo, platba nie je implementovaná.'); this.clear() },
   },
 }

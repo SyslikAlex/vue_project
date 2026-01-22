@@ -22,7 +22,6 @@
 
 <script>
 import { useProductsStore } from '../stores/products'
-import { useCartStore } from '../stores/cart'
 
 export default {
   name: 'ProductView',
@@ -31,13 +30,13 @@ export default {
     return { product: null, qty: 1 }
   },
   created() {
-    const ps = useProductsStore()
-    this.product = ps.getById(this.$route.params.id)
+    const store = useProductsStore()
+    this.product = store.getById(this.$route.params.id)
   },
   methods: {
     add() {
-      const cart = useCartStore()
-      cart.addToCart(this.product.id, this.qty)
+      const store = useProductsStore()
+      store.addToCart(this.product.id, this.qty)
       this.$router.push({ name: 'cart' })
     },
   },

@@ -8,6 +8,7 @@
 
       <nav class="nav">
         <router-link to="/katalog" class="nav-link">Katalóg</router-link>
+        <router-link to="/objednavky" class="nav-link">Objednávky</router-link>
         <router-link to="/about" class="nav-link">O nás</router-link>
         <router-link to="/kosik" class="cart-link">
           <span class="cart-icon">🛒</span>
@@ -25,6 +26,7 @@
         <ul>
           <li><router-link to="/" @click.native="toggleMenu">Domov</router-link></li>
           <li><router-link to="/katalog" @click.native="toggleMenu">Katalóg</router-link></li>
+          <li><router-link to="/objednavky" @click.native="toggleMenu">Objednávky</router-link></li>
           <li><router-link to="/kosik" @click.native="toggleMenu">Košík</router-link></li>
           <li><router-link to="/about" @click.native="toggleMenu">O nás</router-link></li>
         </ul>
@@ -34,7 +36,7 @@
 </template>
 
 <script>
-import { useCartStore } from '../stores/cart'
+import { useProductsStore } from '../stores/products'
 
 export default {
   name: 'HeaderBar',
@@ -43,8 +45,8 @@ export default {
   },
   computed: {
     totalItems() {
-      const cart = useCartStore()
-      return cart.totalItems
+      const store = useProductsStore()
+      return store.totalItems
     },
   },
   methods: {

@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { useCartStore } from '../stores/cart'
+import { useProductsStore } from '../stores/products'
 
 export default {
   name: 'ProductCard',
@@ -25,8 +25,8 @@ export default {
   },
   methods: {
     add() {
-      const cart = useCartStore()
-      cart.addToCart(this.product.id, 1)
+      const store = useProductsStore()
+      store.addToCart(this.product.id, 1)
     },
   },
 }
