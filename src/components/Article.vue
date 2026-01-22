@@ -53,16 +53,18 @@ export default {
 <style scoped>
 .article {
   background: white;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
 }
 
 .article:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
 }
 
 .article-image {
@@ -78,20 +80,21 @@ export default {
 }
 
 .article-content {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .article-title {
-  font-size: 1.5rem;
-  color: #333;
+  font-size: 1.3rem;
+  color: #1a1a1a;
   margin: 0 0 0.5rem 0;
+  font-weight: 600;
 }
 
 .article-meta {
   display: flex;
   gap: 1rem;
   font-size: 0.85rem;
-  color: #666;
+  color: #999;
   margin-bottom: 1rem;
 }
 
@@ -101,7 +104,7 @@ export default {
 }
 
 .article-excerpt {
-  color: #555;
+  color: #424242;
   line-height: 1.6;
   margin: 0;
 }

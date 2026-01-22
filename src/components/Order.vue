@@ -78,65 +78,72 @@ export default {
 <style scoped>
 .order {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.order:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
 }
 
 .order-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   gap: 1rem;
 }
 
 .order-id {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .status {
   padding: 0.4rem 0.8rem;
   border-radius: 4px;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
   color: white;
 }
 
 .status.pending {
-  background: #ff9800;
+  background: #f39c12;
 }
 
 .status.processing {
-  background: #2196f3;
+  background: #3498db;
 }
 
 .status.shipped {
-  background: #9c27b0;
+  background: #9b59b6;
 }
 
 .status.delivered {
-  background: #4caf50;
+  background: #27ae60;
 }
 
 .status.cancelled {
-  background: #f44336;
+  background: #e74c3c;
 }
 
 .order-date {
   color: #999;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 1rem;
 }
 
 .order-items h4 {
-  margin: 0 0 0.5rem 0;
-  color: #333;
+  margin: 0 0 0.75rem 0;
+  color: #1a1a1a;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .items-list {
@@ -151,9 +158,9 @@ export default {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 0;
-  color: #555;
+  color: #424242;
   font-size: 0.9rem;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .item:last-child {
@@ -170,7 +177,7 @@ export default {
 
 .item-price {
   font-weight: 600;
-  color: #333;
+  color: #1a1a1a;
 }
 
 .order-footer {
@@ -181,7 +188,8 @@ export default {
 
 .total {
   font-size: 1rem;
-  color: #333;
+  color: #1a1a1a;
+  font-weight: 600;
 }
 
 .tracking {

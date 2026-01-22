@@ -75,21 +75,25 @@ export default {
   width: 100%;
   border-collapse: collapse;
   background: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .data-table thead {
   background: #f5f5f5;
-  border-bottom: 2px solid #ddd;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .data-table th {
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   text-align: left;
   font-weight: 600;
-  color: #333;
+  color: #1a1a1a;
   cursor: pointer;
   user-select: none;
+  font-size: 0.9rem;
 }
 
 .sortable:hover {
@@ -103,11 +107,12 @@ export default {
 
 .data-table td {
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid #eee;
-  color: #555;
+  border-bottom: 1px solid #e0e0e0;
+  color: #424242;
+  font-size: 0.9rem;
 }
 
 .data-table tbody tr:hover {
-  background: #fafafa;
+  background: #f9f9f9;
 }
 </style>

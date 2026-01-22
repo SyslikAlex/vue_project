@@ -13,72 +13,102 @@ export default {
   <div class="about">
     <section class="hero">
       <div class="container">
-        <h1>O nás</h1>
-        <p class="lead">Pasionálni hudobníci a obchodníci s vyznamením na kvalitu a službu.</p>
+        <h1>About Us</h1>
+        <p class="lead">Passionate musicians and traders committed to quality and service.</p>
       </div>
     </section>
 
     <section class="container about-section">
-      <h2>Naša história</h2>
-      <p>Založili sme sa v roku 2015 s jednoduchým cieľom: sprístupniť kvalitné hudobné nástroje každému. Od malého obchodu v centre mesta sme sa rozrástli na online platformu slúžiacu tisícom hudobníkov po celej krajine.</p>
-      <p>Dnes máme tím skúsených hudobníkov, ktorí rozumejú potrebám našich zákazníkov. Každý produkt v našom katalógu je starostlivo vybraný a testovaný, aby sme zaručili najlepšiu kvalitu.</p>
+      <h2>Our Story</h2>
+      <p>We founded our company in 2015 with a simple goal: to provide quality musical instruments to everyone. From a small shop in the city center, we have grown into an online platform serving thousands of musicians across the country.</p>
+      <p>Today we have a team of experienced musicians who understand the needs of our customers. Every product in our catalog is carefully selected and tested to ensure the highest quality.</p>
     </section>
 
-    <section class="features-section container">
-      <h2>Naše prednosti</h2>
-      <div class="features-grid">
-        <Feature icon="✓" title="Kvalita zaručená" description="Všetky nástroje sú skúšané našimi hudobníkmi pred prúdením do predaja." />
-        <Feature icon="🚚" title="Rýchla doprava" description="Poskytujeme bezplatnú dopravu pre objednávky nad 50€ v rámci krajiny." />
-        <Feature icon="🔄" title="30-denná záruka" description="Ak nie ste spokojní, môžete vrátiť produkt bez otázok do 30 dní." />
-        <Feature icon="💬" title="Odborná podpora" description="Náš tím je vždy pripravený poradiť a pomôcť pri výbere správneho nástroja." />
-        <Feature icon="🎵" title="Školenie zadarmo" description="Pravidelne poriádame online kurzy a workshopy pre našich zákazníkov." />
-        <Feature icon="🌍" title="Globálny sortiment" description="Predávame nástroje od svetových výrobcov ako Yamaha, Fender a ďalších." />
+    <section class="features-section">
+      <div class="container">
+        <h2>Our Advantages</h2>
+        <div class="features-grid">
+          <Feature icon="▸" title="Quality Guaranteed" description="All instruments are tested by our musicians before shipping." />
+          <Feature icon="▸" title="Fast Shipping" description="We offer free shipping on orders over 50€ within the country." />
+          <Feature icon="▸" title="30-Day Warranty" description="If you're not satisfied, you can return the product within 30 days." />
+          <Feature icon="▸" title="Expert Support" description="Our team is always ready to advise and help you choose the right tool." />
+          <Feature icon="▸" title="Free Training" description="We regularly hold online courses and workshops for our customers." />
+          <Feature icon="▸" title="Global Selection" description="We sell instruments from world manufacturers like Yamaha and Fender." />
+        </div>
       </div>
     </section>
 
-    <section class="team-section container">
-      <h2>Náš tím</h2>
-      <p>Naš tím pozostáva z hudobníkov s rôznymi špecializáciami a skúsenosťami. Všetci máme veľkú vášeň pre hudbu a zanietenie pomáhať ostatným v ich hudobnej ceste.</p>
-    </section>
-
-    <section class="testimonials-section container">
-      <h2>Čo hovoria naši zákazníci</h2>
-      <div class="testimonials-grid">
-        <Testimonial 
-          name="Ján Kováčik"
-          role="Profesionálny huslista"
-          avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Jan"
-          text="Najlepší online obchod s hudobnými nástrojmi, ktorý som kedy navštívil. Kvalita, služby a ceny sú neporovnateľné."
-          :rating="5"
-        />
-        <Testimonial 
-          name="Mária Novotná"
-          role="Učiteľka hudby"
-          avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Maria"
-          text="Odporúčam všetkým mojim študentom. Vždy si tam kúpia svojich prvý nástroj s veľkou zľavou."
-          :rating="5"
-        />
-        <Testimonial 
-          name="Peter Hollý"
-          role="Gitarista v kapele"
-          avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Peter"
-          text="Profesionálna obsluha, rýchla doprava a kvalitné produkty. Som velmi spokojný."
-          :rating="4"
-        />
-        <Testimonial 
-          name="Zuzana Bartošová"
-          role="Začiatočnica na klavíri"
-          avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Zuzana"
-          text="Personál mi veľmi pomohol pri výbere klavíru pre moje potreby. Ďakujem za úžasný servis!"
-          :rating="5"
-        />
+    <section class="team-section">
+      <div class="container">
+        <h2>Our Team</h2>
+        <p>Our team consists of musicians with various specializations and experience. We are all passionate about music and committed to helping others on their musical journey.</p>
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="member-avatar">J</div>
+            <h4>John Smith</h4>
+            <p>Guitar Specialist</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">M</div>
+            <h4>Maria Garcia</h4>
+            <p>Piano Expert</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">P</div>
+            <h4>Peter Brown</h4>
+            <p>Percussion Specialist</p>
+          </div>
+          <div class="team-member">
+            <div class="member-avatar">S</div>
+            <h4>Sarah Williams</h4>
+            <p>Customer Support Manager</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="cta-section container">
-      <h2>Chcete začať svoju hudobnú cestu?</h2>
-      <p>Návštívte náš katalóg a nájdite ideálny nástroj pre vás.</p>
-      <router-link to="/katalog" class="btn primary">Prejsť do katalógu</router-link>
+    <section class="testimonials-section">
+      <div class="container">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-grid">
+          <Testimonial 
+            name="John Kovacs"
+            role="Professional Violinist"
+            avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=John"
+            text="The best online music store I've ever visited. Quality, service and prices are unmatched."
+            :rating="5"
+          />
+          <Testimonial 
+            name="Mary Wilson"
+            role="Music Teacher"
+            avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Mary"
+            text="I recommend them to all my students. They always get their first instrument with a great discount."
+            :rating="5"
+          />
+          <Testimonial 
+            name="Robert Johnson"
+            role="Band Guitarist"
+            avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Robert"
+            text="Professional service, fast shipping and quality products. I'm very satisfied."
+            :rating="4"
+          />
+          <Testimonial 
+            name="Sophie Taylor"
+            role="Piano Beginner"
+            avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie"
+            text="The staff really helped me choose a piano for my needs. Thank you for the amazing service!"
+            :rating="5"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Start Your Musical Journey?</h2>
+        <p>Visit our catalog and find the ideal instrument for you.</p>
+        <router-link to="/katalog" class="btn primary large">Go to Catalog</router-link>
+      </div>
     </section>
   </div>
 </template>
@@ -89,80 +119,147 @@ export default {
 }
 
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
   padding: 4rem 0;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin: 0 0 1rem 0;
+  font-size: 2.8rem;
+  margin: 0 0 0.75rem 0;
+  color: #1a1a1a;
+  font-weight: 700;
 }
 
 .hero .lead {
-  font-size: 1.2rem;
-  opacity: 0.95;
+  font-size: 1.1rem;
+  color: #424242;
   margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-section {
   margin: 3rem 0;
+  padding: 0 !important;
+  max-width: 800px;
 }
 
 .about-section h2 {
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
 }
 
 .about-section p {
-  color: #555;
+  color: #424242;
   line-height: 1.8;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .features-section {
   margin: 3rem 0;
+  padding: 3rem 0;
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .features-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
 }
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
 }
 
 .team-section {
   margin: 3rem 0;
-  background: #f9f9f9;
-  padding: 2rem;
-  border-radius: 8px;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .team-section h2 {
-  color: #333;
-  margin-bottom: 1.5rem;
+  color: #1a1a1a;
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
 }
 
-.team-section p {
-  color: #555;
+.team-section > .container > p {
+  color: #424242;
   line-height: 1.8;
+  margin-bottom: 2rem;
+  max-width: 700px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1rem;
+}
+
+.team-member h4 {
+  color: #1a1a1a;
+  margin: 0.5rem 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.team-member p {
+  color: #999;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .testimonials-section {
   margin: 3rem 0;
+  padding: 3rem 0;
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .testimonials-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
 }
 
 .testimonials-grid {
@@ -173,21 +270,20 @@ export default {
 
 .cta-section {
   margin: 3rem 0;
-  padding: 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  border-radius: 8px;
+  padding: 3rem 0;
   text-align: center;
 }
 
 .cta-section h2 {
-  color: white;
-  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+  margin: 0 0 0.75rem 0;
+  font-size: 2rem;
 }
 
 .cta-section p {
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
+  color: #424242;
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
 }
 
 @media (max-width: 768px) {

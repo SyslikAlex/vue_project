@@ -44,14 +44,14 @@ export default {
   gap: 1.5rem;
   padding: 1.5rem;
   background: white;
-  border-radius: 8px;
-  border-left: 4px solid #2196f3;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
 }
 
 .feature:hover {
-  box-shadow: 0 4px 12px rgba(33, 150, 243, 0.2);
-  border-left-color: #1976d2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
 }
 
 .feature-icon {
@@ -62,8 +62,9 @@ export default {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: rgba(33, 150, 243, 0.1);
-  border-radius: 8px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  color: #2c3e50;
 }
 
 .feature-content {
@@ -72,14 +73,15 @@ export default {
 
 .feature-title {
   margin: 0 0 0.5rem 0;
-  color: #333;
+  color: #1a1a1a;
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .feature-description {
   margin: 0;
-  color: #666;
+  color: #424242;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 </style>

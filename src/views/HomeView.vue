@@ -160,22 +160,26 @@ export default {
 
 <style scoped>
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 6rem 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 5rem 0;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 0 0 1rem 0;
   font-weight: 700;
+  color: #1a1a1a;
 }
 
 .hero .lead {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin: 0 0 2rem 0;
-  opacity: 0.95;
+  color: #424242;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured-section {
@@ -184,7 +188,7 @@ export default {
 }
 
 .featured-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
@@ -193,13 +197,13 @@ export default {
 .section-subtitle {
   color: #666;
   text-align: center;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2.5rem 0;
   font-size: 1rem;
 }
 
 .see-all {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .why-us-section {
@@ -208,7 +212,7 @@ export default {
 }
 
 .why-us-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
   margin: 0 0 2rem 0;
   font-size: 2rem;
@@ -217,7 +221,7 @@ export default {
 .features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .articles-section {
@@ -226,7 +230,7 @@ export default {
 }
 
 .articles-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
   margin: 0 0 0.5rem 0;
   font-size: 2rem;
@@ -234,9 +238,9 @@ export default {
 
 .articles-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .testimonials-section {
@@ -245,7 +249,7 @@ export default {
 }
 
 .testimonials-section h2 {
-  color: #333;
+  color: #1a1a1a;
   text-align: center;
   margin: 0 0 2rem 0;
   font-size: 2rem;
@@ -254,26 +258,26 @@ export default {
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .cta-section {
   padding: 4rem 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: white;
+  border-top: 1px solid #e0e0e0;
   text-align: center;
 }
 
 .cta-section h2 {
-  color: white;
+  color: #1a1a1a;
   font-size: 2rem;
   margin: 0 0 1rem 0;
 }
 
 .cta-section p {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin: 0 0 2rem 0;
-  opacity: 0.95;
+  color: #424242;
 }
 
 @media (max-width: 768px) {

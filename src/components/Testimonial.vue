@@ -46,16 +46,16 @@ export default {
 
 <style scoped>
 .testimonial {
-  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  background: white;
   padding: 1.5rem;
-  border-radius: 8px;
-  border-left: 4px solid #4caf50;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
 }
 
 .testimonial:hover {
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
-  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
 }
 
 .testimonial-header {
@@ -66,11 +66,11 @@ export default {
 }
 
 .avatar {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #4caf50;
+  border: 2px solid #e0e0e0;
 }
 
 .testimonial-info {
@@ -79,8 +79,9 @@ export default {
 
 .testimonial-name {
   margin: 0;
-  color: #333;
-  font-size: 1rem;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .testimonial-role {
@@ -95,16 +96,16 @@ export default {
 }
 
 .star {
-  color: #ffc107;
+  color: #fdb913;
   margin-right: 2px;
 }
 
 .star.empty {
-  color: #ddd;
+  color: #e0e0e0;
 }
 
 .testimonial-text {
-  color: #555;
+  color: #424242;
   font-style: italic;
   line-height: 1.6;
   margin: 0;

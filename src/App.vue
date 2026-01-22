@@ -46,10 +46,10 @@ export default {
               </ul>
             </div>
             <div class="footer-section">
-              <h4>Sledujte nás</h4>
+              <h4>Follow Us</h4>
               <ul class="social-links">
                 <li><a href="#" title="Facebook">f</a></li>
-                <li><a href="#" title="Instagram">📷</a></li>
+                <li><a href="#" title="Instagram">@</a></li>
                 <li><a href="#" title="Twitter">𝕏</a></li>
                 <li><a href="#" title="YouTube">▶</a></li>
               </ul>
