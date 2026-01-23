@@ -25,3 +25,34 @@ export default {
 }
 </script>
 
+<style scoped>
+.container {
+  padding-top: 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  color: #1a1a1a;
+}
+
+p {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+}
+</style>
+

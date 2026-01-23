@@ -32,3 +32,43 @@ export default {
 }
 </script>
 
+<style scoped>
+.card {
+  height: 100%;
+}
+
+h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.4;
+}
+
+.price {
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #2c3e50;
+  font-size: 1.25rem;
+}
+
+.desc {
+  flex: 1;
+  margin: 0.75rem 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.row {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.btn {
+  flex: 1;
+  text-align: center;
+}
+</style>
+
