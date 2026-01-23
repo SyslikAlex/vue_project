@@ -18,10 +18,12 @@ export default {
       </div>
     </section>
 
-    <section class="container about-section">
-      <h2>Our Story</h2>
-      <p>We founded our company in 2015 with a simple goal: to provide quality musical instruments to everyone. From a small shop in the city center, we have grown into an online platform serving thousands of musicians across the country.</p>
-      <p>Today we have a team of experienced musicians who understand the needs of our customers. Every product in our catalog is carefully selected and tested to ensure the highest quality.</p>
+    <section class="story-section">
+      <div class="container">
+        <h2>Our Story</h2>
+        <p>We founded our company in 2015 with a simple goal: to provide quality musical instruments to everyone. From a small shop in the city center, we have grown into an online platform serving thousands of musicians across the country.</p>
+        <p>Today we have a team of experienced musicians who understand the needs of our customers. Every product in our catalog is carefully selected and tested to ensure the highest quality.</p>
+      </div>
     </section>
 
     <section class="features-section">
@@ -141,23 +143,29 @@ export default {
   margin-right: auto;
 }
 
-.about-section {
+.story-section {
   margin: 3rem 0;
-  padding: 0 !important;
-  max-width: 800px;
+  padding: 3rem 0;
+  background: white;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-.about-section h2 {
+.story-section h2 {
   color: #1a1a1a;
   margin: 0 0 1.5rem 0;
   font-size: 2rem;
+  text-align: center;
 }
 
-.about-section p {
+.story-section p {
   color: #424242;
   line-height: 1.8;
   font-size: 1rem;
   margin-bottom: 1.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .features-section {
@@ -177,13 +185,16 @@ export default {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .team-section {
   margin: 3rem 0;
   padding: 3rem 0;
+  background: white;
   border-bottom: 1px solid #e0e0e0;
 }
 
@@ -191,53 +202,64 @@ export default {
   color: #1a1a1a;
   margin: 0 0 1.5rem 0;
   font-size: 2rem;
+  text-align: center;
 }
 
 .team-section > .container > p {
   color: #424242;
   line-height: 1.8;
   margin-bottom: 2rem;
-  max-width: 700px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .team-member {
   text-align: center;
-  padding: 1.5rem;
+  padding: 2rem;
   background: white;
-  border-radius: 6px;
+  border-radius: 8px;
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .team-member:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #d0d0d0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #2c3e50;
+  transform: translateY(-4px);
 }
 
 .member-avatar {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
-  background: #2c3e50;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  margin: 0 auto 1rem;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.2);
 }
 
 .team-member h4 {
   color: #1a1a1a;
-  margin: 0.5rem 0;
-  font-size: 1.05rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -245,6 +267,7 @@ export default {
   color: #999;
   margin: 0;
   font-size: 0.9rem;
+  flex: 1;
 }
 
 .testimonials-section {
@@ -264,14 +287,18 @@ export default {
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .cta-section {
   margin: 3rem 0;
   padding: 3rem 0;
   text-align: center;
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  border-top: 1px solid #e0e0e0;
 }
 
 .cta-section h2 {
@@ -287,13 +314,49 @@ export default {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 2.5rem 0;
+  }
+
   .hero h1 {
     font-size: 1.8rem;
   }
 
+  .hero .lead {
+    font-size: 1rem;
+  }
+
+  .story-section h2,
+  .team-section h2,
+  .testimonials-section h2 {
+    font-size: 1.5rem;
+  }
+
   .features-grid,
+  .team-grid,
   .testimonials-grid {
     grid-template-columns: 1fr;
+  }
+
+  .team-member,
+  .feature {
+    padding: 1.5rem;
+  }
+
+  .member-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+  }
+
+  .features-section,
+  .team-section,
+  .testimonials-section {
+    padding: 2rem 0;
+  }
+
+  .cta-section {
+    padding: 2rem 0;
   }
 }
 </style>

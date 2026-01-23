@@ -47,30 +47,36 @@ export default {
 <style scoped>
 .testimonial {
   background: white;
-  padding: 1.5rem;
-  border-radius: 6px;
+  padding: 2rem;
+  border-radius: 8px;
   border: 1px solid #e0e0e0;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .testimonial:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  border-color: #d0d0d0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #2c3e50;
+  transform: translateY(-4px);
 }
 
 .testimonial-header {
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
 }
 
 .avatar {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #e0e0e0;
+  border: 3px solid #f0f0f0;
 }
 
 .testimonial-info {
@@ -80,7 +86,7 @@ export default {
 .testimonial-name {
   margin: 0;
   color: #1a1a1a;
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -92,7 +98,7 @@ export default {
 
 .testimonial-rating {
   margin-bottom: 1rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .star {
@@ -107,7 +113,8 @@ export default {
 .testimonial-text {
   color: #424242;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 1.7;
   margin: 0;
+  flex: 1;
 }
 </style>

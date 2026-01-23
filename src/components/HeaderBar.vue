@@ -24,11 +24,11 @@
       <div class="overlay-inner">
         <button class="close" @click="toggleMenu">✕</button>
         <ul>
-          <li><router-link to="/" @click.native="toggleMenu">Home</router-link></li>
-          <li><router-link to="/katalog" @click.native="toggleMenu">Catalog</router-link></li>
-          <li><router-link to="/objednavky" @click.native="toggleMenu">Orders</router-link></li>
-          <li><router-link to="/kosik" @click.native="toggleMenu">Cart</router-link></li>
-          <li><router-link to="/about" @click.native="toggleMenu">About</router-link></li>
+          <li><router-link to="/" @click="toggleMenu">Home</router-link></li>
+          <li><router-link to="/katalog" @click="toggleMenu">Catalog</router-link></li>
+          <li><router-link to="/objednavky" @click="toggleMenu">Orders</router-link></li>
+          <li><router-link to="/kosik" @click="toggleMenu">Cart</router-link></li>
+          <li><router-link to="/about" @click="toggleMenu">About</router-link></li>
         </ul>
       </div>
     </div>
