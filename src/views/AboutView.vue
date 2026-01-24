@@ -60,11 +60,6 @@ export default {
             <h4>Peter Brown</h4>
             <p>Percussion Specialist</p>
           </div>
-          <div class="team-member">
-            <div class="member-avatar">S</div>
-            <h4>Sarah Williams</h4>
-            <p>Customer Support Manager</p>
-          </div>
         </div>
       </div>
     </section>
@@ -94,13 +89,6 @@ export default {
             text="Professional service, fast shipping and quality products. I'm very satisfied."
             :rating="4"
           />
-          <Testimonial 
-            name="Sophie Taylor"
-            role="Piano Beginner"
-            avatar="https://api.dicebear.com/7.x/avataaars/svg?seed=Sophie"
-            text="The staff really helped me choose a piano for my needs. Thank you for the amazing service!"
-            :rating="5"
-          />
         </div>
       </div>
     </section>
@@ -118,6 +106,12 @@ export default {
 <style scoped>
 .about {
   background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.about section {
+  width: 100%;
 }
 
 .hero {
