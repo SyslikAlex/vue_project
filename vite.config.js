@@ -4,14 +4,18 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
-  base: '/vue_project/', 
+  // ОБЯЗАТЕЛЬНО для GitHub Pages
+  // название репозитория
+  base: '/vue_project/',
+
   plugins: [
     vue(),
     vueDevTools(),
   ],
+
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
 })
