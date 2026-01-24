@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-// Používáme vonkajšie obrázky zo verejných zdrojov
+
 const IMG_ACOUSTIC = 'https://muztorg.ua/image/cache/catalog/99994/231444/231444_kala_nylon_string_classical_guitar_2-1200x800.jpeg'
 const IMG_ELECTRIC = 'https://organology.net/wp-content/uploads/2024/10/electric-guitar.jpg'
 const IMG_PIANO = 'https://shop.usa.yamaha.com/media/catalog/product/cache/909274b353c35762b27165617530ca2e/p/-/p-s500_color_b_1f5564b15d77894b403e07c71eca10dd.jpg'
