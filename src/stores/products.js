@@ -19,7 +19,6 @@ const IMG_METRONOME = 'https://r2.gear4music.com/media/119/1196809/600/preview.j
 
 export const useProductsStore = defineStore('products', {
   state: () => ({
-    // Products catalog
     items: [
       { id: 1, name: 'Akustická gitara', price: 199, description: 'Kvalitná akustická gitara pre začiatočníkov aj pokročilých. Ideálna na nácvik rôznych žánrov od bluegrassu po pop.', category: 'Gitary', stock: 5, image: IMG_ACOUSTIC },
       { id: 2, name: 'Elektrická gitara', price: 349, description: 'Elektrická gitara s humbucker snímačmi, skvelá pre rock a blues. Vrátane zásuvky a kábla.', category: 'Gitary', stock: 3, image: IMG_ELECTRIC },
@@ -37,17 +36,13 @@ export const useProductsStore = defineStore('products', {
       { id: 14, name: 'Digitálny ladičan', price: 19, description: 'Presný digitálny ladičan s LED displejom. Funguje na všetkých typoch nástrojov.', category: 'Príslušenstvo', stock: 20, image: IMG_TUNER },
       { id: 15, name: 'Metrónóm', price: 25, description: 'Digitálny metrónóm s 40-260 BPM. Podpora rôznych taktov a hlasitosťou.', category: 'Príslušenstvo', stock: 14, image: IMG_METRONOME },
     ],
-    // Cart items
     cartItems: [],
-    // Counter
     count: 0,
   }),
   getters: {
-    // Product getters
     getById: (state) => {
       return (id) => state.items.find((p) => p.id === Number(id))
     },
-    // Cart getters
     totalItems: (state) => state.cartItems.reduce((s, i) => s + i.qty, 0),
     totalPrice: (state) => {
       return state.cartItems.reduce((s, i) => {
@@ -61,11 +56,9 @@ export const useProductsStore = defineStore('products', {
         return { product, qty: i.qty }
       })
     },
-    // Counter getters
     doubleCount: (state) => state.count * 2,
   },
   actions: {
-    // Cart actions
     addToCart(productId, qty = 1) {
       const ex = this.cartItems.find((i) => i.productId === productId)
       if (ex) ex.qty += qty
@@ -84,7 +77,6 @@ export const useProductsStore = defineStore('products', {
     clearCart() {
       this.cartItems = []
     },
-    // Counter actions
     increment() {
       this.count++
     },

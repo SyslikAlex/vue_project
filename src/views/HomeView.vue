@@ -46,7 +46,6 @@ export default {
 
 <template>
   <div>
-    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <h1>Vitajte v najlepšom obchode s hudobnými nástrojmi</h1>
@@ -55,7 +54,6 @@ export default {
       </div>
     </section>
 
-    <!-- Featured Products Section -->
     <section class="featured-section">
       <div class="container">
         <h2>Odporúčané produkty</h2>
@@ -69,7 +67,6 @@ export default {
       </div>
     </section>
 
-    <!-- Why Choose Us Section -->
     <section class="why-us-section">
       <div class="container">
         <h2>Prečo si vybrať nás?</h2>
@@ -98,7 +95,6 @@ export default {
       </div>
     </section>
 
-    <!-- Blog Articles Section -->
     <section class="articles-section">
       <div class="container">
         <h2>Užitočné články</h2>
@@ -117,7 +113,6 @@ export default {
       </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials-section">
       <div class="container">
         <h2>Čo hovoria naši zákazníci</h2>
@@ -147,7 +142,6 @@ export default {
       </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
       <div class="container">
         <h2>Začnite svoju hudobnú cestu dnes</h2>
